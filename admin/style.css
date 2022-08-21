@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+}
+
+#page {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 100vh;
+    width: 100vw;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: blueviolet;
+    grid-row: 1 / 13;
+    padding: 20px;
+    color: white;
+    align-items: flex-start;
+}
+
+#header {
+    background-color: white;
+    grid-column: 2 / 13;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0px 5px 10px black;
+}
+
+#content {
+    border: 1px solid black;
+    background-color: blue;
+    grid-row: 3 / 13;
+    grid-column: 2 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+#sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    padding-top: 50px;
+}
+
+.topHeader {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+}
+
+.searchTools {
+    text-align: center;
+}
+
+.glass {
+    height: 40px;
+    position: relative;
+    top: 15px;
+}
+
+#search {
+    width: 80%;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgb(222, 222, 222);
+}
+
+
+.userLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.notif {
+    height: 35px;
+}
+
+.pfp {
+    border-radius: 50%;
+    height: 50%;
+    width: 10%;
+}
+
+.lowerHeader {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+}
+
+.userPanel {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.largePfp {
+    height: 70px;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.userGreeting {
+    display: flex;
+    flex-direction: column;
+    height: 10%
+}
+
+.userGreeting p {
+    margin: 10px;
+}
+
+.uploadContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uploadContent button {
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    height: 60%;
+    width: 25%;
+    margin: 10px;
+    border: 0;
+}
+
+#projects {
+    grid-row: 1 / 13;
+    grid-column: 1 / 10;
+    padding: 10px;
+}
+
+.projList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    height: 100%;
+}
+
+.project {
+    border-left: 10px solid orange;
+    background-color: white;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.project>* {
+    margin: 5px;
+}
+
+.clickies {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+}
+
+#community {
+    grid-row: 1 / 13;
+    grid-column: 10 / 13;
+    padding: 10px;
+}
+
+#commFeed {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    height: 90%;
+}
+
+.announcements {
+    grid-row: 1 / 6;
+    grid-column: 1 / 13;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.trending {
+    grid-row: 7 / 13;
+    grid-column: 1 / 13;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.announcements>* {
+    margin: 5px;
+    font-size: 90%;
+}
+
+.trendUser {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.handle {
+    display: flex;
+    flex-direction: column;
+}
+
+.handle>* {
+    margin: 0;
+}
+
+.trendUser button {
+    border-radius: 50%;
+    width: 10%;
+    margin-right: 20px;
+}
